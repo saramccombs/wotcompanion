@@ -1,6 +1,6 @@
-RSpec.describe Wotcompanion do
+RSpec.describe WOTcompanion do
   it "has a version number" do
-    expect(Wotcompanion::VERSION).not_to be nil
+    expect(WOTcompanion::VERSION).not_to be nil
   end
 
   it "does something useful" do

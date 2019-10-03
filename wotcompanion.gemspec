@@ -3,8 +3,8 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "wotcompanion/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "wotcompanion"
-  spec.version       = Wotcompanion::VERSION
+  spec.name          = "WOTcompanion"
+  spec.version       = WOTcompanion::VERSION
   spec.authors       = ["saramccombs"]
   spec.email         = ["theSaraMcCombs@gmail.com"]
 
