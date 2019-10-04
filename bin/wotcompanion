@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
-
-require './lib/wotcompanion'
+require "bundler/setup"
+require "./lib/wotcompanion"
 
 WOTcompanion::CLI.new.call
