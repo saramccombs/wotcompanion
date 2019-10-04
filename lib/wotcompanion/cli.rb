@@ -4,7 +4,7 @@ class WOTcompanion::CLI
     def call
         welcome
         list_books
-        # ask for simple or long summaries
+        # ask for simple/short or long summaries
         # if simple >> menu, maybe rename menu to menu_short_summaries
         # if long >> menu_full_summaries
         menu
@@ -38,11 +38,19 @@ class WOTcompanion::CLI
         DOC
     end
 
+    # a book - 
+    # has a name
+    # has many chapters
+
+    # a chapter - 
+    # has a name
+    # has a summary
+    # has only one book
 
     def list_books
         puts <<-DOC
 
-        BOOKS:
+        BOOKS IN SERIES:
 
         0. New Spring
         1. The Eye of the World
