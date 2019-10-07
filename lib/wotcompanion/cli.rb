@@ -9,7 +9,7 @@ class WOTcompanion::CLI
         # ask for simple/short or long summaries
         # if simple >> menu, maybe rename menu to menu_short_summaries
         # if long >> menu_full_summaries
-        menu
+        book_menu
         goodbye
     end
 
@@ -66,7 +66,7 @@ class WOTcompanion::CLI
 # gsub saved below so I don't lose/forget it for later use.     
 # .gsub(/^\s*/, '')
 
-    def menu 
+    def book_menu 
         input = nil
         while input != "exit"
             puts <<-DOC
@@ -80,35 +80,36 @@ class WOTcompanion::CLI
             input = gets.strip.downcase
             case input
             when "0"
-                puts "more info on book 0."
+                WOTcompanion::Chapter.book_0
+
             when "1"
-                puts "more info on book 1."
+                WOTcompanion::Chapter.book_1
             when "2"
-                puts "more info on book 2."
+                WOTcompanion::Chapter.book_2
             when "3"
-                puts "more info on book 3."
+                WOTcompanion::Chapter.book_3
             when "4"
-                puts "more info on book 4."
+                WOTcompanion::Chapter.book_4
             when "5"
-                puts "more info on book 5."
+                WOTcompanion::Chapter.book_5
             when "6"
-                puts "more info on book 6."
+                WOTcompanion::Chapter.book_6
             when "7"
-                puts "more info on book 7."
+                WOTcompanion::Chapter.book_7
             when "8"
-                puts "more info on book 8."
+                WOTcompanion::Chapter.book_8
             when "9"
-                puts "more info on book 9."
+                WOTcompanion::Chapter.book_9
             when "10"
-                puts "more info on book 10."
+                WOTcompanion::Chapter.book_10
             when "11"
-                puts "more info on book 11."
+                WOTcompanion::Chapter.book_11
             when "12"
-                puts "more info on book 12."
+                WOTcompanion::Chapter.book_12
             when "13"
-                puts "more info on book 13."
+                WOTcompanion::Chapter.book_13
             when "14"
-                puts "more info on book 14."
+                WOTcompanion::Chapter.book_14
             end
         end
     end

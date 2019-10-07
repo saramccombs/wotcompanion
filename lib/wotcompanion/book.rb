@@ -32,7 +32,7 @@ class WOTcompanion::Book
             counter += 1
         end
         @@all_titles
-        binding.pry
+        # binding.pry
     end
 
 
@@ -42,7 +42,7 @@ class WOTcompanion::Book
         book_0.number = 0
         book_0.name = "New Spring"
         # book_0.name = @@all_titles[0], not working just now. Uninitializd const error. Woring in scrape method. 
-        
+
       
         
         book_1 = self.new
