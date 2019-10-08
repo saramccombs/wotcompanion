@@ -5,7 +5,7 @@ class WOTcompanion::CLI
 
     def call
         welcome
-        list_books
+        # list_books
         # ask for simple/short or long summaries
         # if simple >> menu, maybe rename menu to menu_short_summaries
         # if long >> menu_full_summaries
@@ -34,8 +34,11 @@ class WOTcompanion::CLI
         Jordan's Wheel of Time Series.
 
         --------------------------------------------------------------
-        This CLI Ruby gem provides simple chapter summaries for each
-        book within the series.
+        
+        This CLI Ruby gem provides a listing of chapters belonging to
+        each book within the series, as well as chapter summaries.
+
+        Please wait a moment while we load the list of books.
 
         DOC
     end
@@ -59,7 +62,7 @@ class WOTcompanion::CLI
 
         DOC
         @books = WOTcompanion::Book.all_books
-        @books.each.with_index {|book, i| puts "        #{i}. #{book.name}"}
+        @books.each.with_index {|book, i| puts "        [ #{i} ] #{book.name}"}
         
     end
 
@@ -67,13 +70,16 @@ class WOTcompanion::CLI
 # .gsub(/^\s*/, '')
 
     def book_menu 
+        
         input = nil
         while input != "exit"
+            list_books
+            
             puts <<-DOC
 
             *******************************************************
             * Enter the number of the book you would like chapter *
-            * details on or type exit to quit.                    *
+            * details on or type 'exit' to quit.                  *
             *******************************************************
             
             DOC
@@ -81,7 +87,6 @@ class WOTcompanion::CLI
             case input
             when "0"
                 WOTcompanion::Chapter.book_0
-
             when "1"
                 WOTcompanion::Chapter.book_1
             when "2"

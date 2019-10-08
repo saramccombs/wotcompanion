@@ -18,15 +18,16 @@ class WOTcompanion::Chapter
             book_0_chapters << doc.search("div#mw-content-text table td:nth-child(2) ul li:nth-child(#{counter}) a").text
             counter += 1
         end
+        
         puts <<-DOC
         
         You selected: NEW SPRING - PREQUEL(BOOK 0)
 
         DOC
-        book_0_chapters.each.with_index {|chapter, i| puts "        [#{i+1}] #{chapter}"}
-
-        
+        book_0_chapters.each.with_index {|chapter, i| puts "        [ #{i+1}] #{chapter}"}
+    
         while input != "back"
+           
             puts <<-DOC
 
             *******************************************************
