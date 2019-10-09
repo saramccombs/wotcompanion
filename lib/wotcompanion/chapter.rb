@@ -21,7 +21,7 @@ class WOTcompanion::Chapter
         
         puts <<-DOC
         
-        You selected: NEW SPRING - PREQUEL(BOOK 0)
+        You selected: #{book_0.name}
 
         DOC
         book_0_chapters.each.with_index {|chapter, i| puts "        [ #{i+1}] #{chapter}"}
@@ -76,7 +76,7 @@ class WOTcompanion::Chapter
             
             DOC
             input = gets.strip.downcase
-            WOTcompanion::Summary.book_0(input)
+            WOTcompanion::Summary.comming_soon
         end
 
     end
@@ -114,7 +114,7 @@ class WOTcompanion::Chapter
             
             DOC
             input = gets.strip.downcase
-            WOTcompanion::Summary.book_0(input)
+            WOTcompanion::Summary.comming_soon
         end
 
     end
@@ -152,7 +152,7 @@ class WOTcompanion::Chapter
             
             DOC
             input = gets.strip.downcase
-            WOTcompanion::Summary.book_0(input)
+            WOTcompanion::Summary.comming_soon
         end
 
     end
@@ -190,7 +190,7 @@ class WOTcompanion::Chapter
             
             DOC
             input = gets.strip.downcase
-            WOTcompanion::Summary.book_0(input)
+            WOTcompanion::Summary.comming_soon
         end
 
     end
@@ -228,7 +228,7 @@ class WOTcompanion::Chapter
             
             DOC
             input = gets.strip.downcase
-            WOTcompanion::Summary.book_0(input)
+            WOTcompanion::Summary.comming_soon
         end
 
     end
@@ -266,7 +266,7 @@ class WOTcompanion::Chapter
             
             DOC
             input = gets.strip.downcase
-            WOTcompanion::Summary.book_0(input)
+            WOTcompanion::Summary.comming_soon
         end
 
     end
@@ -304,7 +304,7 @@ class WOTcompanion::Chapter
             
             DOC
             input = gets.strip.downcase
-            WOTcompanion::Summary.book_0(input)
+            WOTcompanion::Summary.comming_soon
         end
 
     end
@@ -342,7 +342,7 @@ class WOTcompanion::Chapter
             
             DOC
             input = gets.strip.downcase
-            WOTcompanion::Summary.book_0(input)
+            WOTcompanion::Summary.comming_soon
         end
 
     end
@@ -380,7 +380,7 @@ class WOTcompanion::Chapter
             
             DOC
             input = gets.strip.downcase
-            WOTcompanion::Summary.book_0(input)
+            WOTcompanion::Summary.comming_soon
         end
 
     end
@@ -418,7 +418,7 @@ class WOTcompanion::Chapter
             
             DOC
             input = gets.strip.downcase
-            WOTcompanion::Summary.book_0(input)
+            WOTcompanion::Summary.comming_soon
         end
 
     end
@@ -456,7 +456,7 @@ class WOTcompanion::Chapter
             
             DOC
             input = gets.strip.downcase
-            WOTcompanion::Summary.book_0(input)
+            WOTcompanion::Summary.comming_soon
         end
 
     end
@@ -494,7 +494,7 @@ class WOTcompanion::Chapter
             
             DOC
             input = gets.strip.downcase
-            WOTcompanion::Summary.book_0(input)
+            WOTcompanion::Summary.comming_soon
         end
 
     end
@@ -527,7 +527,7 @@ class WOTcompanion::Chapter
             
             DOC
             input = gets.strip.downcase
-            WOTcompanion::Summary.book_0(input)
+            WOTcompanion::Summary.comming_soon
         end
 
     end
@@ -560,7 +560,7 @@ class WOTcompanion::Chapter
             
             DOC
             input = gets.strip.downcase
-            WOTcompanion::Summary.book_0(input)
+            WOTcompanion::Summary.comming_soon
         end
 
     end

@@ -1,7 +1,11 @@
 require 'pry'
 class WOTcompanion::Book
 
-    attr_accessor :name, :number
+    attr_accessor :name, :number, :chapters, :summary
+
+    def self.initialize(book_name)
+        
+    end
 
     def self.scrape_book_titles
         # go to website

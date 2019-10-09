@@ -4,6 +4,7 @@ require 'nokogiri'
 require 'pry'
 
 require_relative "./wotcompanion/version"
+require_relative "./wotcompanion/scraper"
 require_relative "./wotcompanion/summary"
 require_relative "./wotcompanion/chapter"
 require_relative "./wotcompanion/book"
